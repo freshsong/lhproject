@@ -583,3 +583,23 @@ ul.d-submenu>li:last-child{
     font-size: 1.1em;
     font-weight: 500;
 }
+
+
+.card{
+    background: #f4f6f8;
+    border-radius: 1em;
+    background: #F4F6F8;
+    text-align: center;   
+    display: flex;
+    height: 100%;
+}
+.card-img{
+    border-radius: 100%;
+    overflow: hidden;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card-body > p{
+    text-align: center;
+}
