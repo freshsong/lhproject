@@ -58,7 +58,7 @@ header{
     height:100px;
     background:#fff;
     position:fixed;
-    z-index:99;
+    z-index:1;
     border-bottom:1px solid #ccc;
     display:none;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
@@ -384,7 +384,6 @@ ul.d-submenu{
    padding:0;
    margin:0;
    display:flex;
-   border-bottom: 1px solid #ddd;
 }
 
 ul.d-submenu>li:first-child{
@@ -393,8 +392,7 @@ ul.d-submenu>li:first-child{
    border-right:1px solid #eee;
 } 
 ul.d-submenu>li:nth-child(2),
-ul.d-submenu>li:nth-child(3),
-ul.d-submenu>li:nth-child(4){
+ul.d-submenu>li:nth-child(3){
    margin: 40px 0;
    width:17%;
    border-right:1px solid #eee;
@@ -404,8 +402,10 @@ ul.d-submenu>li:nth-child(4){
 ul.d-submenu>li:last-child{
     padding-left:20px;
     width: 17%;
-    margin-top: 1.3em;
+    margin: 40px 0;
     padding-top:40px;
+    border-right:1px solid #eee;
+
 }
 .d-submenu h1{
     font-size:3em;
@@ -757,7 +757,7 @@ ul.notice-nav .nav-list::after{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 .notice-list li{
     padding: 20px 5px;
@@ -783,74 +783,4 @@ li.y span{
 }
 .notice-list li a:last-child:hover{
     text-decoration: underline;
-}
-/************* banner ***************/
-.banner-title{
-    position: relative;
-    margin-bottom: 15px;
-}
-.btns{
-    position: absolute;
-    top: 0;
-    right: 0;
-    letter-spacing: 2px;
-    font-size: 1.2em;
-}
-.banner{
-    width: 504px;
-    height: 209px;
-    overflow: hidden;
-    position:relative;
-}
-.banner-in{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2016px;
-}
-.banner-in img{
-    width: 504px;
-    float: left;
-}
-.btns i {
-    cursor:pointer;
-}
-.notice-service{
-    background: #ecf0f5;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-top: 30px;  
-    padding: 30px;
-    display: flex;
-    height: 143px;
-}
-.notice-service h1,
-.notice-service p{
-    line-height: 1;
-    margin: 0;
-    padding: 0;
-}
-.service-title{
-    width: 40%;
-}
-.service-title h1{
-    font-size: 2.2em;
-}
-.service-title p{
-    margin-top: 10px;
-    font-size: 2.1em;
-    color: #2f5bc1;
-}
-.service-time{
-    width: 60%;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    letter-spacing: -2px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-.service-time p{
-    margin-top: 10px;
 }
